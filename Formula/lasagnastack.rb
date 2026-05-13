@@ -1,8 +1,8 @@
 class Lasagnastack < Formula
   desc "An AI pipeline that turns raw video clips into an editable CapCut project for short-form reel editing."
   homepage "https://github.com/jyjulianwong/LasagnaStack"
-  url "https://files.pythonhosted.org/packages/source/l/lasagnastack/lasagnastack-1.0.0.tar.gz"
-  sha256 "37e63e90af568792055b44ff0f2bc6a2bc944be58209e78f279d92d4da752ec6"
+  url "https://files.pythonhosted.org/packages/source/l/lasagnastack/lasagnastack-1.0.1.tar.gz"
+  sha256 "143ef6f9cc90397f33c8d9496ef0f70d0dfddd3f33c4f2f1b4262919483c580b"
   license "MIT"
 
   depends_on "python@3.12"
