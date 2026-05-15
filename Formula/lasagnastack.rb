@@ -5,20 +5,36 @@ class Lasagnastack < Formula
   sha256 "143ef6f9cc90397f33c8d9496ef0f70d0dfddd3f33c4f2f1b4262919483c580b"
   license "MIT"
 
+  depends_on "ffmpeg"
   depends_on "python@3.12"
 
   def install
-    venv = virtualenv_create(libexec, "python3.12")
-    venv.pip_install_and_link buildpath
+    virtualenv_install_with_resources using: "python@3.12"
   end
 
   def caveats
     <<~EOS
-      lasagnastack requires a Gemini API key at runtime:
+      ### Authentication
 
-        export LSNSTK_LLM_GEMINI_API_KEY="your-api-key"
+      You will need to provide your own API keys for the LLM APIs you use. The required API key depends on the value of `LSNSTK_LLM_MODEL`.
 
-      Get a key at https://aistudio.google.com/apikey
+      #### Gemini (e.g. `gemini/gemini-2.5-flash`)
+
+      Get a key at [aistudio.google.com/apikey](https://aistudio.google.com/apikey) and set it as an environment variable:
+
+      ```bash
+      export LSNSTK_LLM_MODEL=gemini/gemini-2.5-flash
+      export LSNSTK_LLM_GEMINI_API_KEY=your-key-here
+      ```
+
+      #### OpenRouter (e.g. `openrouter/deepseek/deepseek-v3.2`)
+
+      Get a key at [openrouter.ai/settings/keys](https://openrouter.ai/settings/keys) and set these environment variables:
+
+      ```bash
+      export LSNSTK_LLM_MODEL=openrouter/deepseek/deepseek-v3.2
+      export LSNSTK_LLM_OPENROUTER_API_KEY=your-key-here
+      ```
     EOS
   end
 
