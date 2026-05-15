@@ -1,4 +1,6 @@
 class Lasagnastack < Formula
+  include Language::Python::Virtualenv
+
   desc "An AI pipeline that turns raw video clips into an editable CapCut project for short-form reel editing."
   homepage "https://github.com/jyjulianwong/LasagnaStack"
   url "https://files.pythonhosted.org/packages/source/l/lasagnastack/lasagnastack-1.0.1.tar.gz"
