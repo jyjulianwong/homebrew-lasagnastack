@@ -1,13 +1,13 @@
 class Lasagnastack < Formula
   desc "An AI pipeline that turns raw video clips into an editable CapCut project for short-form reel editing."
   homepage "https://github.com/jyjulianwong/LasagnaStack"
-  url "https://github.com/jyjulianwong/LasagnaStack/releases/download/v1.0.11/lasagnastack-1.0.11-macos-arm64.tar.gz"
-  sha256 "768fe17703ec9c04338d5cd17701c4725477013c3754fdc117b8916602c5cf02"
+  url "https://github.com/jyjulianwong/LasagnaStack/releases/download/v1.0.12/lasagnastack-1.0.12-macos-arm64.tar.gz"
+  sha256 "342105367b15fed432baf6f1cc47b2fb828394e665e0c0493e08d46264e0a801"
   license "MIT"
 
   bottle do
-    sha256 cellar: :any_skip_relocation, arm64_sequoia: "768fe17703ec9c04338d5cd17701c4725477013c3754fdc117b8916602c5cf02"
-    sha256 cellar: :any_skip_relocation, sequoia:       "cfec0d7209bdd1dc294e138db283ff29e2d3502e82f3f75f49f9943c7f81c1e4"
+    sha256 cellar: :any_skip_relocation, arm64_sequoia: "342105367b15fed432baf6f1cc47b2fb828394e665e0c0493e08d46264e0a801"
+    sha256 cellar: :any_skip_relocation, sequoia:       "d123dd2038b940f9ab1643b98725fe314263592eaa32b3eb2f48bbf7045cb16e"
   end
 
   depends_on "ffmpeg"
