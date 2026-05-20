@@ -4,12 +4,12 @@ class Lasagnastack < Formula
   license "MIT"
 
   on_arm do
-    url "https://github.com/jyjulianwong/LasagnaStack/releases/download/v1.0.12/lasagnastack-1.0.12-macos-arm64.tar.gz"
+    url "https://github.com/jyjulianwong/LasagnaStack/releases/download/v1.0.12/lasagnastack-1.0.12-macos-silicon.tar.gz"
     sha256 "342105367b15fed432baf6f1cc47b2fb828394e665e0c0493e08d46264e0a801"
   end
 
   on_intel do
-    url "https://github.com/jyjulianwong/LasagnaStack/releases/download/v1.0.12/lasagnastack-1.0.12-macos-x86_64.tar.gz"
+    url "https://github.com/jyjulianwong/LasagnaStack/releases/download/v1.0.12/lasagnastack-1.0.12-macos-intel.tar.gz"
     sha256 "d123dd2038b940f9ab1643b98725fe314263592eaa32b3eb2f48bbf7045cb16e"
   end
 
