@@ -8,6 +8,7 @@ class Lasagnastack < Formula
   license "MIT"
 
   depends_on "ffmpeg"
+  depends_on "opencv"  # TODO: Raise as a critical dependency issue.
   depends_on "python@3.12"
 
 
