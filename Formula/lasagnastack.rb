@@ -8,8 +8,9 @@ class Lasagnastack < Formula
   license "MIT"
 
   depends_on "ffmpeg"
-  depends_on "opencv"  # TODO: Raise as a critical dependency issue.
   depends_on "python@3.12"
+  # opencv-python-headless has no sdist so cannot be a standard resource block.
+  # Arch-specific wheel resources are injected below by the CI release workflow.
 
 
   resource "aiohappyeyeballs" do
