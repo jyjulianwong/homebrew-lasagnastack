@@ -4,13 +4,13 @@ class Lasagnastack < Formula
   license "MIT"
 
   on_arm do
-    url "https://github.com/jyjulianwong/LasagnaStack/releases/download/v1.0.16/lasagnastack-1.0.16-macos-silicon.tar.gz"
-    sha256 "c81c0441dde42b6db78ed7abc1461edcb9a91d5cf70a74a333a39608dd8fa3b9"
+    url "https://github.com/jyjulianwong/LasagnaStack/releases/download/v1.0.17/lasagnastack-1.0.17-macos-silicon.tar.gz"
+    sha256 "8e36f9d0ebdb67ed63b3059384e14ac4585b121de97f501de37eb6c711c0b138"
   end
 
   on_intel do
-    url "https://github.com/jyjulianwong/LasagnaStack/releases/download/v1.0.16/lasagnastack-1.0.16-macos-intel.tar.gz"
-    sha256 "ae26524b8be5d6399b246b0d092e4e4fd974e63852dc262accf3dd2ee352036c"
+    url "https://github.com/jyjulianwong/LasagnaStack/releases/download/v1.0.17/lasagnastack-1.0.17-macos-intel.tar.gz"
+    sha256 "6dec443234b40b17ac9338d4a2d7edebc8b20641c77f80a26d16eb7c7afc54b4"
   end
 
   depends_on "ffmpeg"
